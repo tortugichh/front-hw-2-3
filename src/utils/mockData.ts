@@ -120,6 +120,7 @@ export const mockChats: Chat[] = [
     unreadCount: 0,
     isOnline: true,
   },
+  
   {
     id: 'chat-6',
     type: 'person',
