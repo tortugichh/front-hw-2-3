@@ -4,8 +4,8 @@ export const mockChats: Chat[] = [
   {
     id: 'chat-1',
     type: 'person',
-    name: 'Sarah Johnson',
-    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face',
+    name: 'Salam ALeikum',
+    avatar: 'https://media.licdn.com/dms/image/v2/D5603AQFKVZKY3RMKyA/profile-displayphoto-shrink_200_200/B56ZSTx.izHoAY-/0/1737646140388?e=1754524800&v=beta&t=2qgo88IVFKnhmVB464IIVa0iYdvExiu2WncBjee3M7Y',
     messages: [
       { 
         id: 'msg-1', 
@@ -48,41 +48,18 @@ export const mockChats: Chat[] = [
     id: 'chat-2',
     type: 'ai',
     name: 'AI Assistant',
-    avatar: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop',
+    avatar: 'https://media.licdn.com/dms/image/v2/D5603AQFKVZKY3RMKyA/profile-displayphoto-shrink_200_200/B56ZSTx.izHoAY-/0/1737646140388?e=1754524800&v=beta&t=2qgo88IVFKnhmVB464IIVa0iYdvExiu2WncBjee3M7Y',
     messages: [
-      { 
-        id: 'msg-5', 
-        sender: 'user', 
-        text: 'Hello Claude! Can you help me with some programming questions?', 
-        timestamp: Date.now() - 1800000, 
-        type: 'text', 
-        status: 'read' 
-      },
-      { 
-        id: 'msg-6', 
-        sender: 'ai', 
-        text: 'Hello! I\'d be happy to help you with programming questions. What specific topic or language are you working with?', 
-        timestamp: Date.now() - 1790000, 
-        type: 'text', 
-        status: 'sent' 
-      },
-      { 
-        id: 'msg-7', 
-        sender: 'user', 
-        text: 'I\'m working on a React TypeScript project and having trouble with state management', 
-        timestamp: Date.now() - 900000, 
-        type: 'text', 
-        status: 'read' 
-      },
+      
     ],
-    lastMessagePreview: "I'm working on a React TypeScript project and having trouble with state management",
-    unreadCount: 1,
+    lastMessagePreview: "Ask me anything",
+    unreadCount: 0,
   },
   {
     id: 'chat-3',
     type: 'person',
-    name: 'Mike Chen',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
+    name: 'Ualeikum',
+    avatar: 'https://media.licdn.com/dms/image/v2/D5603AQFKVZKY3RMKyA/profile-displayphoto-shrink_200_200/B56ZSTx.izHoAY-/0/1737646140388?e=1754524800&v=beta&t=2qgo88IVFKnhmVB464IIVa0iYdvExiu2WncBjee3M7Y',
     messages: [
       { 
         id: 'msg-8', 
@@ -111,31 +88,16 @@ export const mockChats: Chat[] = [
     name: 'AI Assistant #2',
     avatar: 'https://images.unsplash.com/photo-1676299081847-824916de030a?w=100&h=100&fit=crop',
     messages: [
-      { 
-        id: 'msg-10', 
-        sender: 'user', 
-        text: 'Can you explain quantum computing in simple terms?', 
-        timestamp: Date.now() - 14400000, 
-        type: 'text', 
-        status: 'read' 
-      },
-      { 
-        id: 'msg-11', 
-        sender: 'ai', 
-        text: 'Quantum computing uses quantum mechanical phenomena like superposition and entanglement to process information in ways that classical computers cannot...', 
-        timestamp: Date.now() - 14300000, 
-        type: 'text', 
-        status: 'sent' 
-      },
+      
     ],
-    lastMessagePreview: "Quantum computing uses quantum mechanical phenomena like superposition...",
-    unreadCount: 3,
+    lastMessagePreview: "Ask me smth",
+    unreadCount: 0,
   },
   {
     id: 'chat-5',
     type: 'person',
-    name: 'Emma Wilson',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
+    name: 'Omar Sembek',
+    avatar: 'https://media.licdn.com/dms/image/v2/D5603AQFKVZKY3RMKyA/profile-displayphoto-shrink_200_200/B56ZSTx.izHoAY-/0/1737646140388?e=1754524800&v=beta&t=2qgo88IVFKnhmVB464IIVa0iYdvExiu2WncBjee3M7Y',
     messages: [
       { 
         id: 'msg-12', 
@@ -155,13 +117,13 @@ export const mockChats: Chat[] = [
       },
     ],
     lastMessagePreview: "You're welcome! Did you start reading it yet?",
-    unreadCount: 1,
+    unreadCount: 0,
     isOnline: true,
   },
   {
     id: 'chat-6',
     type: 'person',
-    name: 'Dad',
+    name: 'Omar Hayam',
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
     messages: [
       { 

@@ -2,15 +2,16 @@ import React, { useState, useRef, useEffect } from 'react';
 import type { Chat, Message } from '../types/chatTypes';
 import MessageItem from './MessageItem';
 import { generateGeminiResponse } from '../utils/geminiApi';
-import { Send, Paperclip, Smile, MoreVertical, Phone, VideoIcon, Bot } from 'lucide-react';
+import { Send, Paperclip, Smile, MoreVertical, Phone, VideoIcon, Bot, ArrowLeft } from 'lucide-react';
 
 interface ChatAreaProps {
   selectedChat: Chat | undefined;
   updateChatMessages: (chatId: string, updateFn: (prevMessages: Message[]) => Message[]) => void;
   updateChatLastMessagePreview: (chatId: string, lastMessagePreview: string) => void;
+  onBackToList: () => void;
 }
 
-function ChatArea({ selectedChat, updateChatMessages, updateChatLastMessagePreview }: ChatAreaProps) {
+function ChatArea({ selectedChat, updateChatMessages, updateChatLastMessagePreview, onBackToList }: ChatAreaProps) {
   const [inputMessage, setInputMessage] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -100,9 +101,17 @@ function ChatArea({ selectedChat, updateChatMessages, updateChatLastMessagePrevi
   return (
     <div className="flex-1 flex flex-col bg-gray-900 text-gray-100">
       {/* Chat Header */}
-      <div className="bg-white border-b border-gray-200 px-4 py-3 shadow-sm">
+      <div className="sticky top-0 z-10 bg-white border-b border-gray-200 px-4 py-3 shadow-sm">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
+            {/* Back button for mobile */}
+            <button 
+              className="md:hidden p-2 text-gray-600 hover:bg-gray-100 rounded-full transition-colors"
+              onClick={onBackToList}
+              aria-label="Back to chat list"
+            >
+              <ArrowLeft size={24} />
+            </button>
             {/* Avatar */}
             <div className="relative">
               <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-300 flex items-center justify-center text-white font-semibold">
