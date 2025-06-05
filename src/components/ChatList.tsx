@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ChatItem from './ChatItem';
 import type { Chat } from '../types/chatTypes';
-import { Search, Archive, Settings } from 'lucide-react';
+import { Search, Settings } from 'lucide-react';
 
 interface ChatListProps {
   chats: Chat[];

@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Chat } from '../types/chatTypes';
 import { Bot, Check, CheckCheck } from 'lucide-react';
 

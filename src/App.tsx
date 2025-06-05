@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage.tsx';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { mockChats } from './utils/mockData';
 import type { Chat, Message } from './types/chatTypes';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
